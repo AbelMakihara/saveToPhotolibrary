@@ -11,4 +11,5 @@ ImageHelper.prototype.saveToUserLibrary = function (imageUrl, success, fail) {
     exec(success, fail, "ImageHelper", "saveToUserLibrary", [imageUrl]);
 };
 
-module.exports = new ImageHelper();
+var imageHelper = new ImageHelper();
+module.exports = imageHelper;
