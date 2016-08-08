@@ -17,8 +17,6 @@
        NSArray* paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
        NSString* docDir = [paths objectAtIndex:0];
        NSString* path = [ docDir stringByAppendingString:argPath ];
-
-       //NSString* path = [ [ [ NSBundle mainBundle ] bundlePath ] stringByAppendingString:argPath ];
        img = [[UIImage alloc] initWithContentsOfFile:path];
     }
 
